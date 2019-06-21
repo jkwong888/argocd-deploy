@@ -3,6 +3,8 @@ kind: Kustomization
 
 bases:
 - github.com/argoproj/argo-cd/manifests/base?ref=v1.0.2
+
+resources:
 - bases/*.yaml
 
 namespace: argocd
