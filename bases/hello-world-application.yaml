@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: hello-world
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: jkwong-dev
@@ -15,3 +17,6 @@ spec:
   syncPolicy:
     automated:
       prune: true
+status:
+  sync:
+    revision: ""
