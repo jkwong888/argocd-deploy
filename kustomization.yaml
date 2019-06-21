@@ -5,6 +5,6 @@ bases:
 - github.com/argoproj/argo-cd/manifests/base?ref=v1.0.2
 
 resources:
-- bases/*.yaml
+- bases/hello-world-application.yaml
 
 namespace: argocd
